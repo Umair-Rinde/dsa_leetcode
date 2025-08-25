@@ -10,7 +10,7 @@ class Solution:
 		for i in range(len(s)):
 			if s[i] in char_index and char_index[s[i]] >= left :
 				left = char_index[s[i]]+1
-			char_index[s]=i
+			char_index[s[i]]=i
 
 			max_l = max(max_l, i-left+1)
-		return max
+		return max_l
